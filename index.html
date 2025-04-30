@@ -14,30 +14,46 @@
     header {
       background: #ff9900;
       color: white;
-      padding: 3rem 1rem;
-      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0 0 0.5rem 0;
+    .hero-text {
+      flex: 1 1 300px;
+      padding: 1rem;
     }
-    header p {
+    .hero-text h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    .hero-text p {
       font-size: 1.2rem;
-      margin: 0 0 1.5rem 0;
+      margin-top: 0.5rem;
     }
-    .btn-whatsapp {
+    .hero-text a {
       background: #25D366;
       color: white;
       padding: 1rem 2rem;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      font-size: 1rem;
       display: inline-block;
+      margin-top: 1rem;
+    }
+    .hero-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     section {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
@@ -49,12 +65,14 @@
       padding-left: 1.5rem;
       line-height: 1.8;
     }
-    .cta {
+    .highlight {
       background: #f7f7f7;
-      padding: 1rem;
-      border-left: 5px solid #ff9900;
+      padding: 1.5rem;
       margin: 2rem 0;
+      border-left: 5px solid #25D366;
+      border-radius: 5px;
       font-weight: bold;
+      text-align: center;
     }
     iframe {
       width: 100%;
@@ -75,9 +93,14 @@
 </head>
 <body>
   <header>
-    <h1>NEES</h1>
-    <p>La energía del mañana al alcance de todos</p>
-    <a href="https://wa.me/573238526305" class="btn-whatsapp">Habla con un asesor ahora</a>
+    <div class="hero-text">
+      <h1>Transforma tu vida con energía solar</h1>
+      <p>La energía del mañana al alcance de todos</p>
+      <a href="https://wa.me/573238526305">Habla con un asesor ahora</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.imgur.com/FXzL9pK.jpg" alt="Instalación de panel solar NEES">
+    </div>
   </header>
 
   <section>
@@ -98,11 +121,9 @@
       <li>Mantenimiento y monitoreo</li>
     </ul>
 
-    <div class="cta">
+    <div class="highlight">
       ¡Empieza hoy y aprovecha incentivos tributarios!
     </div>
-
-    <a href="https://wa.me/573238526305" class="btn-whatsapp">Solicita tu evaluación gratuita</a>
 
     <h2>Formulario de contacto</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6btH7kzSZxNjE-XGk6IWpHaSo1JIq7D00DQgMGXtBJuyDjQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
