@@ -11,6 +11,15 @@
       background-color: #fff;
       color: #333;
     }
+    header {
+      padding: 1rem;
+      text-align: center;
+    }
+    .logo {
+      max-width: 220px;
+      margin: auto;
+      display: block;
+    }
     .hero {
       background-color: #ff9900;
       padding: 3rem 1rem;
@@ -18,11 +27,11 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      gap: 2rem;
     }
     .hero .content {
       flex: 1 1 400px;
       max-width: 500px;
-      text-align: left;
       color: white;
     }
     .hero .content h1 {
@@ -40,6 +49,19 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .phone {
+      font-size: 1.1rem;
+      margin-top: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .phone::before {
+      content: '\260E'; /* ☎ = símbolo de teléfono */
+      font-size: 1.2rem;
     }
     .hero .image {
       flex: 1 1 400px;
@@ -76,7 +98,7 @@
     }
     iframe {
       width: 100%;
-      height: 800px;
+      height: 600px;
       border: none;
       margin-top: 2rem;
       border-radius: 12px;
@@ -95,11 +117,6 @@
       font-size: 0.9rem;
       color: #666;
     }
-    .logo {
-      display: block;
-      margin: 2rem auto 0 auto;
-      max-width: 180px;
-    }
     @media (max-width: 768px) {
       .hero {
         flex-direction: column;
@@ -112,16 +129,19 @@
   </style>
 </head>
 <body>
-  <img class="logo" src="https://i.ibb.co/HDh9Zjxy/Mesa-de-trabajo-3-13.png">
+  <header>
+    <img class="logo" src="https://i.ibb.co/6YPcJxf/Logo-NEES-blanco.png" alt="Logo NEES">
+  </header>
 
   <section class="hero">
     <div class="content">
       <h1>Transforma tu vida con energía solar</h1>
       <p>Energía del mañana al alcance de todos</p>
       <a href="https://wa.me/573238526305">Habla con un asesor ahora</a>
+      <div class="phone">+57 323 852 6305</div>
     </div>
     <div class="image">
-      <img src="https://i.ibb.co/15qHhcv/Imagen-de-Whats-App-2025-04-15-a-las-13-52-02-3a64bbfb.jpg" alt="Instalación solar">
+      <img src="https://i.ibb.co/YTg7fM7/solar-panel.jpg" alt="Instalación solar">
     </div>
   </section>
 
@@ -150,7 +170,7 @@
     <h2>Formulario de contacto</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6btH7kzSZxNjE-XGk6IWpHaSo1JIq7D00DQgMGXtBJuyDjQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-    <img class="bottom-img" src="https://i.ibb.co/rKPNwcyk/Imagen-de-Whats-App-2025-04-15-a-las-13-52-03-483658d4.jpg" alt="Imagen adicional NEES">
+    <img class="bottom-img" src="https://i.ibb.co/j5F8KhL/solar-install-2.jpg" alt="Imagen adicional NEES">
   </section>
 
   <footer>
