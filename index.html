@@ -8,74 +8,79 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #ffffff;
+      background-color: #fff;
       color: #333;
     }
-    header {
-      background: #ff9900;
-      color: white;
+    .hero {
+      background-color: #ff9900;
+      padding: 3rem 1rem;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
-      padding: 2rem;
+      justify-content: center;
     }
-    .hero-text {
+    .hero .content {
       flex: 1 1 400px;
-      padding: 1rem;
-    }
-    .hero-text h1 {
-      font-size: 2.2rem;
-      margin: 0;
-    }
-    .hero-text p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .hero-text a {
-      background: #25D366;
+      max-width: 500px;
+      text-align: left;
       color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1rem;
     }
-    .hero-img {
+    .hero .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero .content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero .content a {
+      background-color: #25D366;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero .image {
       flex: 1 1 400px;
       text-align: center;
     }
-    .hero-img img {
-      width: 100%;
-      max-width: 500px;
-      min-width: 280px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .hero .image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
     section {
-      padding: 2rem;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
+      padding: 3rem 1.5rem;
     }
-    h2 {
+    section h2 {
       color: #ff9900;
-      font-size: 1.6rem;
-      margin-top: 2rem;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
-    ul {
+    section ul {
       padding-left: 1.5rem;
       line-height: 1.8;
     }
-    .highlight {
-      background: #f7f7f7;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-left: 5px solid #25D366;
-      border-radius: 5px;
-      font-weight: bold;
+    .cta {
       text-align: center;
+      background-color: #e6f8ef;
+      padding: 2rem;
+      margin: 3rem 0;
+      border-left: 5px solid #25D366;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
     .bottom-img {
       width: 100%;
@@ -83,43 +88,42 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      margin-top: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
     footer {
-      text-align: center;
+      background-color: #f2f2f2;
       padding: 2rem;
-      background: #f2f2f2;
+      text-align: center;
       font-size: 0.9rem;
       color: #666;
     }
-    @media screen and (max-width: 768px) {
-      header {
+    .logo {
+      display: block;
+      margin: 2rem auto 0 auto;
+      max-width: 180px;
+    }
+    @media (max-width: 768px) {
+      .hero {
         flex-direction: column;
         text-align: center;
       }
-      .hero-text, .hero-img {
-        flex: 1 1 100%;
+      .hero .content, .hero .image {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="hero-text">
+  <img class="logo" src="https://drive.google.com/uc?export=view&id=1SAOyhLAegM3nkcrUl6hzfLi5R7cG_w1v" alt="Logo NEES">
+
+  <section class="hero">
+    <div class="content">
       <h1>Transforma tu vida con energía solar</h1>
-      <p>La energía del mañana al alcance de todos</p>
+      <p>Energía del mañana al alcance de todos</p>
       <a href="https://wa.me/573238526305">Habla con un asesor ahora</a>
     </div>
-    <div class="hero-img">
-      <img src="https://drive.google.com/uc?export=view&id=1a2T6Dq41cahHxGWdbBS-WQFXCd7NPNx2" alt="Instalación de panel solar NEES">
+    <div class="image">
+      <img src="https://drive.google.com/uc?export=view&id=1a2T6Dq41cahHxGWdbBS-WQFXCd7NPNx2" alt="Instalación solar">
     </div>
-  </header>
+  </section>
 
   <section>
     <h2>¿Por qué elegir energía solar?</h2>
@@ -139,14 +143,14 @@
       <li>Mantenimiento y monitoreo</li>
     </ul>
 
-    <div class="highlight">
+    <div class="cta">
       ¡Empieza hoy y aprovecha incentivos tributarios!
     </div>
 
     <h2>Formulario de contacto</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6btH7kzSZxNjE-XGk6IWpHaSo1JIq7D00DQgMGXtBJuyDjQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-    <img class="bottom-img" src="https://drive.google.com/uc?export=view&id=1F2KN8JWUhN1kjM9uE5gG-q6Y5sFM9ACg" alt="NEES instalación solar imagen 2">
+    <img class="bottom-img" src="https://drive.google.com/uc?export=view&id=1F2KN8JWUhN1kjM9uE5gG-q6Y5sFM9ACg" alt="Imagen adicional NEES">
   </section>
 
   <footer>
@@ -154,4 +158,3 @@
   </footer>
 </body>
 </html>
-
