@@ -1,184 +1,576 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEES - Nueva Era de Energía Solar</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-    header {
-      padding: 1rem;
-      text-align: center;
-    }
-    .logo {
-      max-width: 240px;
-      margin: auto;
-      display: block;
-    }
-    .hero {
-      background-color: #ff9900;
-      padding: 4rem 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .hero .content {
-      color: white;
-    }
-    .hero .content h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-    .hero .content p {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-    }
-    .hero .content a {
-      background-color: #25D366;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-    .phone {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .hero .image {
-      text-align: center;
-    }
-    .hero .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.15);
-    }
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 3rem 1.5rem;
-    }
-    section h2 {
-      color: #ff9900;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    section ul {
-      padding-left: 1.5rem;
-      line-height: 1.8;
-    }
-    .cta {
-      text-align: center;
-      background-color: #e6f8ef;
-      padding: 2rem;
-      margin: 3rem 0;
-      border-left: 5px solid #25D366;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    .bottom-img {
-      width: 100%;
-      max-width: 900px;
-      display: block;
-      margin: 3rem auto 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #f2f2f2;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .hero .content, .hero .image {
-        max-width: 100%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEES | Energía solar para casas, fincas, cabañas y negocios en Colombia</title>
+<meta name="description" content="Soluciones solares a la medida para casas, fincas, cabañas y negocios. Sistemas híbridos, off-grid y con baterías en Colombia.">
+<meta name="theme-color" content="#F7941D">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEES | Energía solar para casas, fincas, cabañas y negocios en Colombia">
+<meta property="og:description" content="Diseñamos e instalamos sistemas solares a la medida para que tengas energía estable y dependas menos de la red eléctrica.">
+<meta property="og:image" content="assets/images/hero-instalador-finca.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icons/logo-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/logo-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css?v=20260617">
 </head>
 <body>
-  <header>
-    <img class="logo" src="https://i.ibb.co/99ZdP7V0/Mesa-de-trabajo-3-13.png" alt="Logo NEES">
-  </header>
 
-  <section class="hero">
-    <div class="content">
-      <h1>Transforma tu vida con energía solar</h1>
-      <p>Energía del mañana al alcance de todos</p>
-      <a href="https://wa.me/573238526305">Habla con un asesor ahora</a>
-      <div style="text-align: center; margin-top: 1rem;">
-        <a href="tel:+573238526305" style="background-color: #25D366; color: white; padding: 1rem 2rem; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block;">
-          ☎ +57 323 852 6305
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand" aria-label="NEES - Inicio">
+      <img src="assets/icons/logo-icon.png" alt="" class="brand-icon" width="40" height="40">
+      <span class="brand-name">NEES</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#soluciones">Soluciones</a></li>
+        <li><a href="#proyecto">Proyectos</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/573238526305?text=Hola%2C%20quiero%20cotizar%20un%20sistema%20solar"
+       class="btn btn-primary header-cta" target="_blank" rel="noopener">
+      Cotiza por WhatsApp
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <img src="assets/images/hero-instalador-finca.jpg" alt="Técnico de NEES instalando paneles solares en una finca al atardecer, con ganado pastando de fondo" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <h1 class="reveal">Energía solar confiable para tu finca, cabaña, casa o negocio</h1>
+      <p class="hero-sub reveal">Diseñamos e instalamos sistemas solares a la medida para que tengas energía estable, reduzcas costos y dependas menos de la red eléctrica.</p>
+      <div class="hero-actions reveal">
+        <a href="https://wa.me/573238526305?text=Hola%2C%20quiero%20cotizar%20un%20sistema%20solar" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Cotiza por WhatsApp
         </a>
+        <a href="#soluciones" class="btn btn-ghost btn-lg">Ver soluciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEMA ===================== -->
+  <section class="section problema">
+    <div class="container narrow text-center reveal">
+      <h2>¿Te pasa que la energía falla justo cuando más la necesitas?</h2>
+      <p class="lead">
+        Muchas propiedades rurales, turísticas y negocios pequeños dependen de una red inestable
+        o pagan facturas cada vez más altas. En NEES te ayudamos a entender qué sistema necesitas
+        y te acompañamos desde el diseño hasta la instalación.
+      </p>
+    </div>
+
+    <div class="container">
+      <ul class="problem-grid">
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">⚡</span>
+          <p>Cortes de energía que llegan en el peor momento</p>
+        </li>
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">🧾</span>
+          <p>Facturas de luz cada vez más altas</p>
+        </li>
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">📡</span>
+          <p>Zonas rurales con red eléctrica inestable o ausente</p>
+        </li>
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">🏡</span>
+          <p>Cabañas o fincas que necesitan energía autónoma</p>
+        </li>
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">🤔</span>
+          <p>Dudas sobre qué sistema solar comprar</p>
+        </li>
+        <li class="reveal">
+          <span class="pill-icon" aria-hidden="true">😟</span>
+          <p>Miedo a invertir en algo mal dimensionado</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUCIONES ===================== -->
+  <section class="section soluciones" id="soluciones">
+    <div class="container text-center">
+      <p class="section-tag reveal">Nuestras soluciones</p>
+      <h2 class="reveal">Un sistema solar pensado para tu propiedad, no uno genérico</h2>
+      <p class="lead reveal">Cada solución se calcula según tu consumo, tu ubicación y tu presupuesto.</p>
+    </div>
+
+    <div class="container">
+      <div class="cards-grid">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🏠</span>
+          <h3>Sistemas solares para casas</h3>
+          <p>Ideal si quieres reducir tu factura de energía y empezar a generar tu propia electricidad desde el techo de tu casa.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🌳</span>
+          <h3>Fincas y cabañas</h3>
+          <p>Pensado para propiedades rurales o turísticas que necesitan energía estable así la red eléctrica sea débil o esté lejos.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🔋</span>
+          <h3>Sistemas híbridos con baterías</h3>
+          <p>Combina la red eléctrica con baterías que guardan energía, para que no te quedes sin luz cuando haya un corte.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🛰️</span>
+          <h3>Off-grid para zonas sin red</h3>
+          <p>Funciona de forma independiente, sin necesidad de estar conectado a la red eléctrica. Ideal para zonas aisladas.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🏪</span>
+          <h3>Negocios pequeños</h3>
+          <p>Reduce los costos de energía de tu negocio y protégelo de los cortes que afectan tus ventas o tu operación diaria.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">🛠️</span>
+          <h3>Mantenimiento y revisión</h3>
+          <p>Revisamos el estado de tu sistema solar para que siga funcionando bien y siga rindiendo como el primer día.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section class="section como-funciona" id="como-funciona">
+    <div class="container text-center">
+      <p class="section-tag reveal">Cómo funciona</p>
+      <h2 class="reveal">No necesitas saber de paneles, baterías o inversores</h2>
+      <p class="lead reveal">Nosotros te guiamos paso a paso para que tomes una buena decisión.</p>
+    </div>
+
+    <div class="container">
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-num">1</span>
+          <h3>Nos cuentas tu necesidad</h3>
+          <p>Nos escribes por WhatsApp y nos cuentas qué tipo de propiedad tienes y qué buscas resolver.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">2</span>
+          <h3>Revisamos consumo y ubicación</h3>
+          <p>Analizamos cuánta energía usas y las condiciones de tu propiedad para dimensionar bien el sistema.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">3</span>
+          <h3>Diseñamos una solución a la medida</h3>
+          <p>Te presentamos una propuesta clara, sin tecnicismos, ajustada a tu presupuesto real.</p>
+        </li>
+        <li class="reveal">
+          <span class="step-num">4</span>
+          <h3>Instalamos y te acompañamos</h3>
+          <p>Hacemos la instalación y seguimos disponibles después, por si surge cualquier duda.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== PROYECTOS / EJEMPLOS REALES ===================== -->
+  <section class="section proyectos" id="proyecto">
+    <div class="container text-center">
+      <p class="section-tag reveal">Casos reales</p>
+      <h2 class="reveal">Ejemplos reales de soluciones solares</h2>
+      <p class="lead reveal">Cada propiedad tiene una necesidad distinta. Estos casos muestran cómo una solución solar puede adaptarse a cabañas turísticas, viviendas con cortes de luz, fincas productivas y bombeo de agua en zonas rurales.</p>
+    </div>
+
+    <div class="container">
+      <div class="scenario-grid">
+
+        <!-- Caso 1 — Cabañas y turismo sin red -->
+        <article class="scenario-card scenario-card--feature reveal">
+          <div class="scenario-media">
+            <video class="scenario-video" poster="assets/images/proyectos/cabana-offgrid.jpeg" preload="metadata" muted playsinline controls>
+              <source src="assets/videos/proyectos/cabana-offgrid.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="scenario-body">
+            <h3 class="scenario-title">Para cabañas y alojamientos sin red eléctrica</h3>
+            <p class="scenario-case">Cabaña A-Frame 100% Off-Grid · La Vega</p>
+            <p class="scenario-text">Una solución para propiedades turísticas que necesitan operar de forma autónoma, mantener sus amenidades disponibles y no depender de la red eléctrica.</p>
+
+            <ul class="scenario-badges">
+              <li>Off-grid</li>
+              <li>Turismo</li>
+              <li>Construcción + solar</li>
+              <li>Llave en mano</li>
+            </ul>
+
+            <ul class="scenario-specs">
+              <li>8 paneles solares de 415 W</li>
+              <li>Inversor híbrido de 5 kW monofásico</li>
+              <li>2 bancos de litio 48V – 100 Ah</li>
+              <li>Energía para nevera, lavadora, jacuzzi, sonido e iluminación</li>
+              <li>Operación 24/7 sin conexión a red</li>
+            </ul>
+
+            <p class="scenario-micro">Ideal para cabañas, glampings, ecohoteles y Airbnb rurales.</p>
+          </div>
+        </article>
+
+        <!-- Caso 2 — Cortes de luz y respaldo automático -->
+        <article class="scenario-card reveal">
+          <div class="scenario-media">
+            <video class="scenario-video" poster="assets/images/proyectos/hibrido-jacuzzi.jpg" preload="metadata" muted playsinline controls>
+              <source src="assets/videos/proyectos/hibrido-corto.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="scenario-body">
+            <h3 class="scenario-title">Para viviendas que sufren cortes frecuentes</h3>
+            <p class="scenario-case">Sistema híbrido con respaldo automático · La Vega</p>
+            <p class="scenario-text">Una solución para propiedades que sí tienen red eléctrica, pero necesitan continuidad cuando la energía falla. El sistema combina red, solar y batería para reducir interrupciones.</p>
+
+            <ul class="scenario-badges">
+              <li>Híbrido</li>
+              <li>Respaldo automático</li>
+              <li>Escalable</li>
+              <li>Residencial</li>
+            </ul>
+
+            <ul class="scenario-specs">
+              <li>4 paneles solares de 585 Wp</li>
+              <li>Inversor híbrido bifásico de 6 kW</li>
+              <li>Batería de litio 48V – 100 Ah ampliable</li>
+              <li>Conmutación automática ante cortes</li>
+              <li>Diseñado para vivienda con jacuzzi</li>
+            </ul>
+
+            <p class="scenario-micro">Ideal para casas rurales, fincas de descanso y propiedades con amenidades sensibles a cortes.</p>
+          </div>
+        </article>
+
+        <!-- Caso 3 — Fincas productivas y alta demanda -->
+        <article class="scenario-card reveal">
+          <div class="scenario-media scenario-media--photo">
+            <img src="assets/images/proyectos/finca-gran-capacidad-1.jpg" alt="Proyecto en construcción de sistema solar de gran capacidad para finca productiva en Cundinamarca" loading="lazy">
+            <span class="scenario-flag">En construcción</span>
+          </div>
+          <div class="scenario-body">
+            <h3 class="scenario-title">Para fincas que necesitan más capacidad</h3>
+            <p class="scenario-case">Sistema off-grid de gran capacidad · Cundinamarca</p>
+            <p class="scenario-text">Una solución pensada para operar aislada de la red, alimentar necesidades de obra y soportar cargas futuras de una finca productiva.</p>
+
+            <ul class="scenario-badges">
+              <li>Gran capacidad</li>
+              <li>Off-grid</li>
+              <li>Ampliable</li>
+              <li>En construcción</li>
+            </ul>
+
+            <ul class="scenario-specs">
+              <li>16 paneles solares de 630 W</li>
+              <li>Inversor híbrido split phase de 10 kW</li>
+              <li>2 baterías 51.2V – 100 Ah, ampliable a 4</li>
+              <li>Energía para trompos, compresores y maquinaria</li>
+              <li>Posibilidad de conexión futura a red o planta</li>
+            </ul>
+
+            <p class="scenario-micro">Ideal para fincas productivas, obras rurales, maquinaria y proyectos con crecimiento futuro.</p>
+          </div>
+        </article>
+
+        <!-- Caso 4 — Agua, riego y ganadería -->
+        <article class="scenario-card reveal">
+          <div class="scenario-media">
+            <video class="scenario-video" poster="assets/images/proyectos/bomba-agua-cover.jpg" preload="metadata" muted playsinline loop controls>
+              <source src="assets/videos/proyectos/bomba-agua-reel.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="scenario-body">
+            <h3 class="scenario-title">Para bombeo de agua sin depender de la red</h3>
+            <p class="scenario-case">Bombeo solar autónomo 60 m · Suárez, Tolima</p>
+            <p class="scenario-text">Una solución práctica para extraer agua subterránea usando energía solar, pensada para consumo, riego y ganadería en zonas rurales.</p>
+
+            <ul class="scenario-badges">
+              <li>Bombeo solar</li>
+              <li>Rural</li>
+              <li>Agua 24/7</li>
+              <li>Off-grid</li>
+            </ul>
+
+            <ul class="scenario-specs">
+              <li>6 paneles solares de 580 Wp</li>
+              <li>Arreglo solar de 3.48 kWp</li>
+              <li>Bomba Kolosal de 200 L/min</li>
+              <li>Pozo a 60 metros</li>
+              <li>Controlador MPPT con protecciones</li>
+            </ul>
+
+            <p class="scenario-micro">Ideal para fincas ganaderas, agricultura, riego y pozos profundos.</p>
+          </div>
+        </article>
+
       </div>
 
-
-    </div>
-    <div class="image">
-      <img src="https://i.ibb.co/15qHhcv/Imagen-de-Whats-App-2025-04-15-a-las-13-52-02-3a64bbfb.jpg" alt="Instalación solar">
+      <div class="proyectos-closing reveal">
+        <p>No todos los proyectos necesitan el mismo sistema. En NEES revisamos tu consumo, ubicación, presupuesto y nivel de autonomía para diseñar una solución que tenga sentido para tu propiedad.</p>
+        <a href="https://wa.me/573238526305?text=Hola%2C%20quiero%20saber%20qu%C3%A9%20soluci%C3%B3n%20solar%20necesito" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          Quiero saber qué solución necesito
+        </a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>¿Por qué elegir energía solar?</h2>
-    <ul>
-      <li>Ahorro inmediato en tu factura de energía</li>
-      <li>Autonomía energética 24/7</li>
-      <li>Incentivos tributarios disponibles</li>
-      <li>Instalación rápida y sin complicaciones</li>
-      <li>Evaluación gratuita y asesoría sin costo</li>
-    </ul>
-
-    <h2>Servicios que ofrecemos</h2>
-    <ul>
-      <li>Instalación de paneles solares para viviendas, fincas y negocios</li>
-      <li>Sistemas solares para bombas, neveras, aires acondicionados</li>
-      <li>Proyectos rurales o en zonas sin red eléctrica</li>
-      <li>Mantenimiento y monitoreo</li>
-    </ul>
-
-    <div class="cta">
-      ¡Empieza hoy y aprovecha incentivos tributarios!
+  <!-- ===================== BENEFICIOS ===================== -->
+  <section class="section beneficios">
+    <div class="container text-center">
+      <p class="section-tag reveal">Beneficios</p>
+      <h2 class="reveal">Lo que ganas al cambiarte a energía solar</h2>
     </div>
 
-    <h2>Formulario de contacto</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6btH7kzSZxNjE-XGk6IWpHaSo1JIq7D00DQgMGXtBJuyDjQ/viewform?usp=header" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-
-    <img class="bottom-img" src="https://i.ibb.co/rKPNwcyk/Imagen-de-Whats-App-2025-04-15-a-las-13-52-03-483658d4.jpg" alt="Imagen adicional NEES">
+    <div class="container">
+      <ul class="benefits-grid">
+        <li class="reveal"><span aria-hidden="true">💰</span><p>Ahorro y control del consumo</p></li>
+        <li class="reveal"><span aria-hidden="true">🔋</span><p>Energía de respaldo ante cortes</p></li>
+        <li class="reveal"><span aria-hidden="true">🛰️</span><p>Mayor autonomía energética</p></li>
+        <li class="reveal"><span aria-hidden="true">🌳</span><p>Ideal para zonas rurales</p></li>
+        <li class="reveal"><span aria-hidden="true">🏡</span><p>Aumenta el valor de tu propiedad</p></li>
+        <li class="reveal"><span aria-hidden="true">🍃</span><p>Energía limpia y silenciosa</p></li>
+        <li class="reveal"><span aria-hidden="true">📐</span><p>Diseño a la medida de tu consumo</p></li>
+        <li class="reveal"><span aria-hidden="true">🤝</span><p>Acompañamiento antes, durante y después</p></li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    <p>NEES - Nueva Era de Energía Solar S.A.S | www.nees.com.co | Carrera 8 #12C-35, Oficina 806</p>
-  </footer>
+  <!-- ===================== CONFIANZA ===================== -->
+  <section class="section confianza">
+    <div class="container">
+      <div class="confianza-grid">
+        <div class="confianza-media reveal">
+          <img src="assets/images/tecnico-instalando-estructura.jpg" alt="Técnico de NEES armando la estructura metálica para paneles solares en campo abierto" loading="lazy">
+        </div>
+        <div class="confianza-info reveal">
+          <p class="section-tag">Por qué NEES</p>
+          <h2>Una empresa cercana, técnica y comprometida con hacer las cosas bien</h2>
+          <ul class="check-list">
+            <li>Evaluamos tu caso antes de recomendar cualquier equipo</li>
+            <li>No vendemos sistemas genéricos</li>
+            <li>Explicamos cada componente en palabras claras</li>
+            <li>Buscamos equilibrio entre presupuesto, autonomía y seguridad</li>
+            <li>Usamos equipos adecuados para cada necesidad</li>
+            <li>Acompañamos al cliente después de la instalación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATIVO ===================== -->
+  <section class="section educativo">
+    <div class="container text-center">
+      <p class="section-tag reveal">Para entender mejor</p>
+      <h2 class="reveal">¿Qué sistema solar necesitas?</h2>
+      <p class="lead reveal">Tres formas de aprovechar el sol, explicadas sin tecnicismos.</p>
+    </div>
+
+    <div class="container">
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <h3>On-grid</h3>
+          <p>Conectado a la red eléctrica. Tus paneles generan energía y reducen lo que pagas en la factura. Ideal si solo quieres ahorrar.</p>
+        </article>
+        <article class="edu-card edu-card--featured reveal">
+          <h3>Híbrido</h3>
+          <p>Conectado a la red, pero con baterías propias. Cuando se va la luz, tus baterías te respaldan. Ideal si quieres ahorro y respaldo.</p>
+        </article>
+        <article class="edu-card reveal">
+          <h3>Off-grid</h3>
+          <p>Totalmente independiente de la red. Genera y almacena su propia energía. Ideal para fincas, cabañas o zonas donde no llega la red.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section faq" id="faq">
+    <div class="container narrow">
+      <p class="section-tag text-center reveal">Preguntas frecuentes</p>
+      <h2 class="text-center reveal">Lo que más nos preguntan</h2>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Cuánto cuesta instalar paneles solares?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Depende del tamaño de tu propiedad, tu consumo y si quieres baterías o no. Por eso primero revisamos tu caso y te damos una cotización ajustada a tu necesidad real, no un precio genérico.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Sirve si vivo en una zona rural?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Sí. De hecho, las zonas rurales y fincas son uno de los casos donde la energía solar tiene más sentido, especialmente cuando la red eléctrica es débil o no llega.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Puedo tener energía cuando se va la luz?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Sí, si tu sistema incluye baterías (sistema híbrido u off-grid). Las baterías guardan energía durante el día para que la sigas usando cuando se corte la red.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Qué diferencia hay entre un sistema con baterías y sin baterías?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Un sistema sin baterías (on-grid) solo te ayuda a ahorrar en la factura, pero si se va la luz, te quedas sin energía igual. Un sistema con baterías te da respaldo: sigues teniendo energía aunque la red falle.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Necesito cambiar toda la instalación eléctrica de mi casa?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>No necesariamente. En la mayoría de los casos el sistema solar se conecta a tu instalación actual. Si algo necesita ajustarse, te lo explicamos antes de instalar, sin sorpresas.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Cuánto dura un sistema solar?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Los paneles solares suelen tener una vida útil larga, de varios años de buen desempeño. Los inversores y baterías tienen su propia vida útil, y te explicamos esto con claridad antes de instalar.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Hacen visita o diagnóstico?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Sí. Antes de recomendarte un sistema, revisamos tu consumo y las condiciones de tu propiedad, ya sea con la información que nos compartes o con una visita, según el caso.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" aria-expanded="false">
+            ¿Qué información necesitan para cotizar?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Nos sirve saber qué tipo de propiedad tienes (casa, finca, cabaña o negocio), qué aparatos quieres alimentar y, si la tienes, tu factura de energía. Con eso ya podemos empezar a ayudarte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final" id="contacto">
+    <div class="container text-center">
+      <h2 class="reveal">Da el primer paso hacia una energía más confiable</h2>
+      <p class="reveal">Cuéntanos qué necesitas y revisamos contigo la mejor opción para tu casa, finca, cabaña o negocio.</p>
+      <a href="https://wa.me/573238526305?text=Hola%2C%20quiero%20cotizar%20un%20sistema%20solar" class="btn btn-white btn-lg reveal" target="_blank" rel="noopener">
+        Hablar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logos/logo-completo.png" alt="NEES - Nueva Era de Energía Solar S.A.S." class="footer-logo" width="160" height="220">
+      <p>Nueva Era de Energía Solar S.A.S.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li>Sistemas para casas</li>
+        <li>Fincas y cabañas</li>
+        <li>Sistemas híbridos con baterías</li>
+        <li>Off-grid</li>
+        <li>Negocios pequeños</li>
+        <li>Mantenimiento</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Zonas de atención</h4>
+      <ul>
+        <li>Colombia</li>
+        <li>Cundinamarca</li>
+        <li>La Vega y zonas rurales</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/573238526305" target="_blank" rel="noopener">WhatsApp: +57 323 852 6305</a></li>
+        <li><a href="mailto:cotizaciones@nees.com.co">cotizaciones@nees.com.co</a></li>
+        <li><a href="https://instagram.com/nees.col" target="_blank" rel="noopener">Instagram: @nees.col</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>Diseñamos soluciones solares según las condiciones técnicas y consumo de cada cliente.</p>
+    <p>&copy; <span id="year"></span> NEES — Nueva Era de Energía Solar S.A.S.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/573238526305?text=Hola%2C%20quiero%20cotizar%20un%20sistema%20solar"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Habla con un asesor por WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M16 2C8.3 2 2 8.3 2 16c0 2.6.7 5.1 2 7.3L2 30l6.9-1.8c2.1 1.2 4.5 1.8 7.1 1.8 7.7 0 14-6.3 14-14S23.7 2 16 2zm0 25.4c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.1 1.1 1.1-4-.3-.5C4.6 20.1 4 18.1 4 16 4 9.4 9.4 4 16 4s12 5.4 12 12-5.4 12-12 12zm6.6-9c-.4-.2-2.1-1-2.4-1.2-.3-.1-.6-.2-.8.2-.2.3-.9 1.2-1.2 1.5-.2.2-.4.3-.8.1-1-.5-2.5-1.4-3.7-2.8-1-1.1-1.7-2.4-1.9-2.8-.2-.3 0-.5.1-.7.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5-.1-.7-.1-.2-.9-2.1-1.2-2.9-.2-.7-.5-.6-.7-.6h-.7c-.2 0-.6.1-.9.5-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.3 2.4 3.8 6 5.2 3 1.2 3.6 1 4.2.9.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.3-.2-.7-.4z"/>
+  </svg>
+</a>
+
+<script defer src="js/script.js?v=20260617"></script>
 </body>
 </html>
-
